@@ -1,0 +1,60 @@
+/* IMPORT A PROFESSIONAL FONT (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* BRANDING PALETTE - CHANGE THIS HEX CODE to match Prepico's exact blue */
+  --primary-color: #2563eb; 
+  --primary-hover: #1d4ed8;
+  
+  /* Neutral Colors */
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+
+  /* Spacing & Radius */
+  --radius: 8px;
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Modern, clean font */
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* GLOBAL BUTTON STYLES */
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Primary Brand Button */
+.save-btn, .action-btn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-radius: var(--radius) !important;
+}
+
+.save-btn:hover, .action-btn:hover {
+  background-color: var(--primary-hover) !important;
+  transform: translateY(-1px);
+}
+
+/* Secondary Button (Gray) */
+button.secondary {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+}
